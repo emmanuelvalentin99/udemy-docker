@@ -11,7 +11,7 @@ services:
 # my_app:v2
 
   app:
-    image: my_app:v2
+    image: my_app:latest
     ports: 
       - 3000:3000
     environment:
@@ -30,7 +30,7 @@ services:
   mysql:
     image: mysql:5.7
     volumes:
-    - /Users/joan_amengual/Desktop/multi-container/todo-mysql-data:/var/lib/mysql
+    - C:\Users\Emmanuel Valentin\Documents\Proyect\udemy-docker\docker-joaneet\BLOQUE 1 - Background y fundamentos de Docker\multi-container\todo-mysql-data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: secret
       MYSQL_DATABASE: todos
